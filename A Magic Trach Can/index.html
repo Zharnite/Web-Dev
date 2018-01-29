@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<title>AMTC</title>
+	</head>
+	<body>
+		<div id="topBar">
+			<h1 id="topTitle">AMTC</h1>
+		</div>
+		<ul id="navbar">
+			<li><a class="navlink active" onclick="showNavCont(event, 'title')">Title</a></li>
+			<li><a class="navlink" onclick="showNavCont(event, 'game')">Game</a></li>
+			<li><a class="navlink" onclick="showNavCont(event, 'log')">Log</a></li>
+			<li><a class="navlink" onclick="showNavCont(event, 'unknown')">Unknown</a></li>
+		</ul>
+		<div id="title" class="navcontent">
+			A Magic Trash Can
+			
+		</div>
+		<div id="game" class="navcontent">
+			<div id="game_msg">a magic trash can lies here</div>
+			<hr>
+			<div id="bag">
+				<span style="font-weight: bold">BAG</span>
+				<table id="bagTable" border="1">
+					<thead>
+						<tr>
+							<th>Item Name</th>
+							<th>Quantity</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody id="bagBody">
+						<tr class="bagItem">
+							<td>Notebook</td>
+							<td>1</td>
+							<td>a notebook to write in, it is a gift</td>
+						</tr>
+						<tr class="bagItem">
+							<td>Pen</td>
+							<td>1</td>
+							<td>a pen to write with, it is a gift</td>
+						</tr>
+					</tbody>
+					
+				</table>
+				
+			</div>
+			<hr>
+			<div id="found">
+				Found: <span id="foundSpan"></span>
+			</div>
+			<hr>
+			The First Search: <button id="searchBtn">Search</button>
+			
+		</div>
+		<div id="log" class="navcontent">
+			<ol type="1" id="logEntries">
+			</ol>
+		</div>
+		<div id="unknown">
+			
+		</div>
+		
+		<script src="js/index.js"></script>
+	</body>
+
+</html>
