@@ -24,7 +24,7 @@ itemIdArray = ["nothing","banana_peel","dead_rat","chicken_bones"];
 descriptionArray = ["o[- _-]o",
 "old and smelly, you cannot eat it",
 "disgusting, the intestines are showing",
-"nothing but but the bones, maybe there is some bone marrow"];
+"nothing but the bones, maybe there is some bone marrow"];
 itemAmountArray = [0, 0, 0, 0];
 bagArray = ["Notebook","Pen"];
 
@@ -36,6 +36,7 @@ bagItem = document.getElementsByClassName("bagItem");
 bagTable = document.getElementById("bagTable");
 var thisItem = {};
 searchBtn.addEventListener("click", function() {
+
 	searchCounter++;
 	string = "";
 	description = "";
@@ -56,7 +57,9 @@ searchBtn.addEventListener("click", function() {
 	else {
 		addOne();
 	}
-
+	
+	openShop();
+	addEntry();
 	update();
 });
 
