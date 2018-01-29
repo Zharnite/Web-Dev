@@ -1,2 +1,2 @@
 # Web-Dev
-* Learning web development
+* Learning web development through mini projects
