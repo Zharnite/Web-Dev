@@ -1,0 +1,23 @@
+body {
+	font-family: sans-serif;
+}
+#sideBar {
+	background-color: rgba(230, 255, 230, 1);
+	color:  rgba(0, 100, 20, 1);
+	position: fixed;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	left: 275px;
+	overflow: auto;
+	padding: 10px 20px 10px 20px;
+	font-family: monospace;
+	z-index: 10;
+}
+#bottleTrader {
+	text-align: left;
+	padding: 0px 40px 0px 40px;
+}
+#WB {
+	display: none;
+}

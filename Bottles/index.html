@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Bottle Collector</title>
+		<link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+	<body onload="gameLoad();">
+        <h1>Bottle Collector</h1>
+		<div>
+			Money: $<span id="money">0</span> <br>
+			<div id="divWB">
+			<button id="findWBBtn">Find</button>
+			Water Bottles: <span id="WBNum">0</span> 
+			</div>
+			<br>
+			<div id="divSC" style="display: none">
+			<button id="findSCBtn">Find</button>
+			Soda Cans: <span id="WBNum">0</span>
+			</div>
+		</div>
+		<div>
+			<pre id="WB">
+				     
+ |-|
+/~~~\	Congradulations!
+| W |	You found enough empty 
+\ B /	water bottles to trade for
+|---|	a Full Bottle of Water.
+|---|	Thank you for recycling!
+|___|</pre>
+		
+		</div>
+		<div id = "sideBar">
+            <h3 id = "bottleTrader">Bottle Trader</h3>
+            Water Bottle (WB) = $1      
+            <span id="priceSC">Soda Can (SC) = $100</span>
+            <hr>
+			<pre>SELL</pre>
+			<div id="sellWB">
+            (WB) - 
+			| <button id="sellOneWBBtn">Sell</button> One |___| <button id="sellAllWBBtn">Sell</button> All | 
+			</div>
+			<br>
+			<div id="sellSC" style="display: none">
+            (SC) - 
+			| <button id="sellOneSCBtn">Sell</button> One |___| <button id="sellAllSCBtn">Sell</button> All |
+			</div>
+			<br>
+			<hr>
+			<pre>UNLOCK</pre>
+			<button id="SCunlockBtn">Unlock</button> 
+			<span id="SCunlock">Soda Can (SC) for $100,000 and 100,000 (WB)</span> 
+			<button id="BGunlockBtn" style="display: none">Unlock</button> 
+			<span id="BGunlock" style="display: none">Beer Glass (BG) for $10,000,000 and 10,000,000 (SC)</span>
+			<hr>
+            <pre>UPGRADES</pre>
+            Increase the maximum Bottles found in one try. <br>
+            <button id="upgradeWaterBtn">Upgrade</button>
+			WB - |Level: <span id="upgradeWaterLevel">0</span>|___|Cost: $<span id="costWB">x</span>| <br>
+			<div id="upgradeSC" style="display: none">
+			<button id="upgradeSodaBtn">Upgrade</button>
+			SC - |Level: <span id="upgradeSodaLevel">0</span>|___|Cost: $<span id="SC">x</span>|
+			</div>
+			<hr>
+			
+            <pre>FULL</pre>
+            
+            Trade for a Full Bottle<br>
+            <button id="FWBBtn">Trade</button>
+            <span id="FWB">Full Water Bottle: 10,000 (WB)</span> <br>
+			<div id="tradeSC" style="display: none">
+			<button id="SC">Trade</button>
+			<span id="FSC">Full Soda Can: 10,000 (SC)</span> <br>
+			</div>
+			
+        </div>
+		
+		<script src="index.js"></script>
+	</body>
+</html>
